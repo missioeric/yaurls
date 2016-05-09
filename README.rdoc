@@ -1,28 +1,19 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This URL Shortener was written to practice TDD using RSpec and Capybara.
 
-Things you may want to cover:
+Skills/Gems I used:
 
-* Ruby version
+* [BH - BootStrap Helper Gem](https://github.com/Fullscreen/bh)
 
-* System dependencies
+* Bootstrap
 
-* Configuration
+* FactoryGirl
 
-* Database creation
+* Pry
 
-* Database initialization
+* Selenium-Webdriver
 
-* How to run the test suite
+* Integrated [Flatty Theme](http://blacktie.co/2013/12/flatty-app-landing-page/)
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* View the app deployed at Heroku - [yaurls-tdd.herokuapp.com](yaurls-tdd.herokuapp.com)
