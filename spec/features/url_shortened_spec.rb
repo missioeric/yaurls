@@ -10,6 +10,6 @@ feature "URL is shortened" do
     @link = Link.find_by_full_url('http://www.rubydoc.info/github/Fullscreen/bh/master/Bh/Helpers')
 
     expect(@link.short_url.length).to be < 6
-    expect(page).to have_css 'h1', text: 'New Link'
+    expect(page).to have_css 'h1', text: 'An Easy New Way to Shorten Your URLs'
   end
 end
