@@ -40,6 +40,8 @@ group :development, :test do
   gem 'byebug'
   gem 'pry'
   gem 'rspec-rails'
+  gem 'capybara'
+  gem 'capybara-mechanize', :github => 'jeroenvandijk/capybara-mechanize', :branch => 'master'
 
 end
 
