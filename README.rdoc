@@ -4,7 +4,7 @@ This URL Shortener was written to practice TDD using RSpec and Capybara.
 
 Skills/Gems I used:
 
-* [BH - BootStrap Helper Gem](https://github.com/Fullscreen/bh)
+* (BH - BootStrap Helper Gem)[https://github.com/Fullscreen/bh]
 
 * Bootstrap
 
@@ -14,6 +14,6 @@ Skills/Gems I used:
 
 * Selenium-Webdriver
 
-* Integrated [Flatty Theme](http://blacktie.co/2013/12/flatty-app-landing-page/)
+* Integrated (Flatty Theme)[http://blacktie.co/2013/12/flatty-app-landing-page/]
 
-* View the app deployed at Heroku - [yaurls-tdd.herokuapp.com](yaurls-tdd.herokuapp.com)
+* View the app deployed at Heroku - (yaurls-tdd.herokuapp.com)[yaurls-tdd.herokuapp.com]
