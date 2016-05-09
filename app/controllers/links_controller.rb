@@ -29,6 +29,7 @@ class LinksController < ApplicationController
   # GET /links/new
   def new
     @link = Link.new
+    render :layout => 'application'
   end
 
   # POST /links

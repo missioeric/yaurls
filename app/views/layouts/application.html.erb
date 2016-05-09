@@ -1,14 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Yaurls</title>
+  <title>YAURLS - Yet Another URL Shortener</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <!-- Fonts from Google Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
 
-<%= yield %>
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><b>YAURLS - Yet Another URL Shortener</b></a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to("View Links", links_path) %></li>
+          <li><a href="https://github.com/missioeric/yaurls">View Source on GitHub</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+
+
+  <div id="headerwrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-8">
+
+            <%= yield %>
+
+          </div><!-- /col-lg-6 -->
+  				<div class="col-lg-4 col-md-4">
+  					<%= image_tag("ipad-hand.png", class: "img-responsive") %>
+  				</div><!-- /col-lg-6 -->
+
+  			</div><!-- /row -->
+  		</div><!-- /container -->
+  	</div><!-- /headerwrap -->
+
+
+    <div class="container">
+  		<div class="row mt centered">
+  			<div class="col-lg-6 col-lg-offset-3">
+  				<h1>Shortening URLs<br/>Has Never Been So Simple.</h1>
+  				<h3>This is a good sample project to continue to practice TDD Rails concepts.</h3>
+  			</div>
+  		</div><!-- /row -->
+
+  		<div class="row mt centered">
+  			<div class="col-lg-4">
+  				<%= image_tag("ser01.png", width: "180") %>
+  				<h4>1 - Browser Compatibility</h4>
+  				<p>This works in any browser.</p>
+  			</div><!--/col-lg-4 -->
+
+  			<div class="col-lg-4">
+          <%= image_tag("ser02.png", width: "180") %>
+  				<h4>2 - Email Campaigns</h4>
+  				<p>Maybe I'll add this as a feature in the future.</p>
+
+  			</div><!--/col-lg-4 -->
+
+  			<div class="col-lg-4">
+          <%= image_tag("ser03.png", width: "180") %>
+  				<h4>3 - Gather Your Links</h4>
+  				<p>I might try to see if I can dethrone Bit.ly :)</p>
+
+  			</div><!--/col-lg-4 -->
+  		</div><!-- /row -->
+  	</div><!-- /container -->
+
+  	<div class="container">
+  		<p class="centered">Theme originally Created by BlackTie.co - Attribution License 3.0 - 2013</p>
+  	</div><!-- /container -->
 
 </body>
 </html>

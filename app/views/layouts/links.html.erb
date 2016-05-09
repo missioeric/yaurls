@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YAURLS - Yet Another URL Shortener</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+  <!-- Fonts from Google Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><b>YAURLS - Yet Another URL Shortener</b></a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to("Shorten Link", root_path) %></li>
+          <li><a href="https://github.com/missioeric/yaurls">View Source on GitHub</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+
+
+
+
+
+    <div class="container">
+  		<div class="row mt centered">
+  			<div class="col-lg-6 col-lg-offset-3">
+  				<h1>View Created Links</h1>
+  				</div>
+  		</div><!-- /row -->
+
+  		<%= yield %>
+
+  	<div class="container">
+  		<p class="centered">Theme Originally Created by BlackTie.co - Attribution License 3.0 - 2013</p>
+  	</div><!-- /container -->
+
+</body>
+</html>
