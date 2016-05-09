@@ -16,9 +16,6 @@ RSpec.describe "links/new", type: :view do
 
       assert_select "input#link_full_url[name=?]", "link[full_url]"
 
-      assert_select "input#link_short_url[name=?]", "link[short_url]"
-
-      assert_select "input#link_clicks[name=?]", "link[clicks]"
     end
   end
 end

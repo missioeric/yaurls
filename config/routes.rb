@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 
   root 'links#new'
 
+  get '/:short_url', to: 'links#show'
+
   resources :links
 
   # Example of regular route:

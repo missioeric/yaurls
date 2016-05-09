@@ -19,7 +19,6 @@ RSpec.describe "links/index", type: :view do
   it "renders a list of links" do
     render
     assert_select "tr>td", :text => "Full Url".to_s, :count => 2
-    assert_select "tr>td", :text => "Short Url".to_s, :count => 2
     assert_select "tr>td", :text => 1.to_s, :count => 2
   end
 end

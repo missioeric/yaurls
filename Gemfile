@@ -41,7 +41,9 @@ group :development, :test do
   gem 'pry'
   gem 'rspec-rails'
   gem 'capybara'
-  gem 'capybara-mechanize', :github => 'jeroenvandijk/capybara-mechanize', :branch => 'master'
+  gem 'selenium-webdriver'
+  gem 'factory_girl_rails'
+  gem 'database_cleaner'
 
 end
 

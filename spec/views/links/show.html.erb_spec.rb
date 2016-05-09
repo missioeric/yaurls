@@ -12,7 +12,6 @@ RSpec.describe "links/show", type: :view do
   it "renders attributes in <p>" do
     render
     expect(rendered).to match(/Full Url/)
-    expect(rendered).to match(/Short Url/)
     expect(rendered).to match(/1/)
   end
 end

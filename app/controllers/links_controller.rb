@@ -1,5 +1,5 @@
 class LinksController < ApplicationController
-  before_action :set_link, only: [:show, :destroy]
+  before_action :set_link, only: [:destroy]
 
   # GET /links
   # GET /links.json
@@ -10,6 +10,20 @@ class LinksController < ApplicationController
   # GET /links/1
   # GET /links/1.json
   def show
+    if params[:short_url]
+      @link = Link.find_by(short_url: params[:short_url])
+      if @link
+        if redirect_to @link.full_url
+          @link.clicks += 1
+          @link.save
+        end
+      else
+        redirect_to root_path
+      end
+
+    else
+      @link = Link.find(params[:id])
+    end
   end
 
   # GET /links/new
